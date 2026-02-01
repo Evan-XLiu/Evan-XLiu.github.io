@@ -108,6 +108,11 @@ ul.task-list input[type="checkbox"] {
         background-color: var(--global-theme-color) !important;
       }
     }
+
+    /* Education / Experience / Employment 的 highlights、courses 字号（定为 0.9rem） */
+    .card-text ul.items .item {
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -175,23 +180,26 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3.8rem; /* 缩小字体图标，原 4rem */
 
     a {
+      margin-left: 0rem; /* 图标左侧间距，设为 0 则无间距 */
+      margin-right: 0rem; /* 图标右侧间距，设为 0 则无间距 */
+
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 2.2rem; /* 缩小图片图标，原 2.8rem */
+        height: 2.2rem;
+        margin: 0.0rem 0.0rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
+        width: 3.5rem; /* 缩小 SVG 图标，原 3.5rem */
+        height: 4rem; /* 原 4rem */
         margin-bottom: 0.5rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.8rem; /* 原 3.5rem */
+          height: 2.8rem; /* 原 3.5rem */
         }
       }
 

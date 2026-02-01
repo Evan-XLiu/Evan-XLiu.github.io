@@ -1,5 +1,5 @@
 {% comment %}
-  Unified awards entry renderer for both formats
+  Awards: 左侧时间不变，右侧只显示一行介绍（summary 或 title）
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
@@ -25,38 +25,20 @@
             </table>
           </div>
           <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            {% if entry.url %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
-              </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
-            {% endif %}
-
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
-            {% endif %}
-
-            {% if entry.summary %}
-              <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% assign line = entry.summary | default: entry.title %}
+            {% if entry.url and line %}
+              <p class="ml-1 ml-md-4 mb-0"><a href="{{ entry.url }}">{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</a></p>
+            {% elsif line %}
+              <p class="ml-1 ml-md-4 mb-0">{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
           </div>
         {% else %}
           <div class="col-xs-12 col-sm-12 col-md-12">
-            {% if entry.url %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
-              </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
-            {% endif %}
-
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
-            {% endif %}
-
-            {% if entry.summary %}
-              <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% assign line = entry.summary | default: entry.title %}
+            {% if entry.url and line %}
+              <p class="ml-1 ml-md-4 mb-0"><a href="{{ entry.url }}">{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</a></p>
+            {% elsif line %}
+              <p class="ml-1 ml-md-4 mb-0">{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
           </div>
         {% endif %}
