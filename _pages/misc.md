@@ -15,18 +15,22 @@ I have been practicing percussion🥁 for over 15 years and hold the Grade 10 Ce
 <div class="row no-gutters" style="margin-left: -7.5px; margin-right: -7.5px;">
 
   <div class="col-sm-4 mt-3 mt-md-0" style="padding-left: 7.5px; padding-right: 7.5px;">
-    {% include figure.liquid path="assets/img/misc/1.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
-    
-    {% include figure.liquid path="assets/img/misc/5.jpg" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/1_1.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/1_2.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/1_3.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/1_4.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
   </div>
 
   <div class="col-sm-4 mt-3 mt-md-0" style="padding-left: 7.5px; padding-right: 7.5px;">
-    {% include figure.liquid path="assets/img/misc/2.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
-    {% include figure.liquid path="assets/img/misc/4.PNG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/2_1.jpg" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/2_2.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/2_3.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
   </div>
 
   <div class="col-sm-4 mt-3 mt-md-0" style="padding-left: 7.5px; padding-right: 7.5px;">
-    {% include figure.liquid path="assets/img/misc/3.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/3_1.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/3_2.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
+    {% include figure.liquid path="assets/img/misc/3_3.JPG" title="" class="img-fluid rounded z-depth-1 mb-0" %}
   </div>
 
 </div>
