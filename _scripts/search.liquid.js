@@ -78,9 +78,18 @@ ninja.data = [
       },
     {%- endfor -%}
   {%- endif -%}
+  {%- assign search_excluded_collections = "posts,books,news,teachings" | split: "," -%}
   {%- for collection in site.collections -%}
-    {%- if collection.label != 'posts' -%}
+    {%- unless search_excluded_collections contains collection.label -%}
       {%- for item in collection.docs -%}
+        {%- assign show_in_search = true -%}
+        {%- if collection.label == 'projects' -%}
+          {%- assign projects_page = site.pages | where: "permalink", "/projects/" | first -%}
+          {%- if projects_page.display_only_selected and item.display != true -%}
+            {%- assign show_in_search = false -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if show_in_search -%}
         {
           {%- if item.inline -%}
             {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
@@ -97,8 +106,9 @@ ninja.data = [
             },
           {%- endunless -%}
         },
+        {%- endif -%}
       {%- endfor -%}
-    {%- endif -%}
+    {%- endunless -%}
   {%- endfor -%}
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}

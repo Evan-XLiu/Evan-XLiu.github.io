@@ -40,7 +40,15 @@
       margin-bottom: 1rem;
 
       .preview {
-        display: inline-block;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
       }
 
       .abbr {
@@ -69,6 +77,11 @@
 
       .title {
         font-weight: bolder;
+        font-size: 1.08rem;
+      }
+
+      .periodical .entry-year {
+        font-style: italic;
       }
 
       .author {
@@ -81,7 +94,8 @@
           }
         }
 
-        > em {
+        > em,
+        > span.author-self {
           border-bottom: 1px solid;
           font-style: normal;
         }

@@ -33,7 +33,7 @@ cv:
         # area: Robotics
         studyType: M.Sc. in Robotics
         start_date: 2026.8
-        end_date: 2028.1
+        end_date: Present
         score: ""
         # courses: "Theory of Relativity"
         # highlights:
@@ -76,12 +76,12 @@ cv:
           - Advised by Prof.Yongquan Chen
         #   - Responsibility or achievement 2.
 
-      - company: CET Inc.
+      - company: CET Electric Technology Inc.
         position: Software Intern
         location: Shenzhen, China
         url: https://www.cet-global.com/
         start_date: 2025.1
-        end_date: 2026.3
+        end_date: 2025.3
         # summary: Optional short description.
         # highlights:
         #   - Responsibility or achievement 1.
