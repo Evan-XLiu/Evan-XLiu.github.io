@@ -21,7 +21,7 @@ Database: [AMASS](https://amass.is.tue.mpg.de/index.html)
     </div>
 </div>
 
-After completing the SMPL shape and motion preparation, as well as the Humanoid-SMPL fitting and retargeting, I proceeded to train the policies. The results are shown below. The reference humanoid motions are displayed in MuJoCo, while the training results are simulated in Isaac Gym. Each policy was trained for approximately 15,000 to 20,000 iterations, taking about 15–20 hours on an RTX 3090.
+After completing the SMPL shape and motion preparation, as well as the Humanoid-SMPL fitting and retargeting, I proceeded to train the policies. The results are shown below. The reference humanoid motions are displayed in MuJoCo, while the training results are simulated in Isaac Gym. Each policy was trained for approximately 8800 to 17000 iterations, taking about 22–40 hours on an RTX 3090.
 
 
 <div class="row justify-content-sm-center">
@@ -37,7 +37,7 @@ After completing the SMPL shape and motion preparation, as well as the Humanoid-
 </div>
 
 <div class="caption">
-    Left: Jump forward, Middle: CR7, Right: Walk. The yellow points are reference keypoints.
+    Left: Jump forward, Middle: CR7, Right: Walk. The yellow and blue points are reference keypoints.
 </div>
 
 
