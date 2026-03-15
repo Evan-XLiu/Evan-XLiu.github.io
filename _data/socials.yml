@@ -5,7 +5,7 @@ cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: 220320110@stu.hit.edu.cn # your email address
 github_username: Evan-XLiu # your GitHub username
 linkedin_username: xuanwei-liu-08aba435a # your LinkedIn username
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: WskJ5W0AAAAJ #your Google Scholar ID
 x_username: Xuanwei_Liu
 # wechat_qr: wechat.jpg # 点击微信图标会弹出二维码（暂时注释，插件不支持此格式）
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
