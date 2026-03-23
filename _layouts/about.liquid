@@ -71,6 +71,42 @@ layout: default
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
+
+      <div id="wechat-modal" class="wechat-modal" aria-hidden="true">
+        <div class="wechat-modal-dialog">
+          <button type="button" class="wechat-modal-close" aria-label="Close">&times;</button>
+          <img src="{{ '/assets/img/wechat.jpg' | relative_url }}" alt="WeChat QR Code">
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const wechatLink = document.querySelector('.social .contact-icons a[href*="/assets/img/wechat.jpg"]');
+          const modal = document.getElementById('wechat-modal');
+          const closeBtn = modal ? modal.querySelector('.wechat-modal-close') : null;
+
+          if (!wechatLink || !modal) return;
+
+          wechatLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            modal.classList.add('show');
+            modal.setAttribute('aria-hidden', 'false');
+          });
+
+          const closeModal = function () {
+            modal.classList.remove('show');
+            modal.setAttribute('aria-hidden', 'true');
+          };
+
+          if (closeBtn) {
+            closeBtn.addEventListener('click', closeModal);
+          }
+
+          modal.addEventListener('click', function (e) {
+            if (e.target === modal) closeModal();
+          });
+        });
+      </script>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
