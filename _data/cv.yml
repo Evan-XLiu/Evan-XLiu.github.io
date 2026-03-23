@@ -65,12 +65,23 @@ cv:
           - 2023/24 Outstanding Student (top 5%)
 
     Employment:
-      - company: Shenzhen Institute of Artificial Intelligence and Robotics for Society
+      - company: Roboscience
+        position: Robotics Research Intern
+        url: https://airs.cuhk.edu.cn/en
+        location: Shenzhen, China
+        start_date: 2026.3
+        end_date: 2026.7
+        # summary: Optional short description.
+        highlights:
+          - Advised by Prof.Lin Shao
+        #   - Responsibility or achievement 2.
+
+      - company: Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)
         position: Dexterous Manipulation Research Intern
         url: https://airs.cuhk.edu.cn/en
         location: Shenzhen, China
         start_date: 2025.11
-        end_date: 2026.5
+        end_date: 2026.3
         # summary: Optional short description.
         highlights:
           - Advised by Prof.Yongquan Chen
@@ -126,7 +137,7 @@ cv:
           - Zixuan Liu*, Ruoyi Qiao*, Chenrui Tie, Xuanwei Liu, Yunfan Lou, Chongkai Gao, Zhixuan Xu, Lin Shao
         publisher: RSS Robotics and Sustainable Systems 
         releaseDate: 2026
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
+        url: https://contact-coverage-guided-exploration.github.io/
         summary: Propose CCGE, an exploration method utilizing contact coverage counters to incentivize novel hand-object interactions and guide reaching for efficient dexterous manipulation.
 
       # - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt

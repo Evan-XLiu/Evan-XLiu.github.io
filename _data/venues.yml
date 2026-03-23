@@ -7,3 +7,11 @@
 
 "Vision":
   color: "#009f36"
+
+"Clean Energy":
+  url: https://academic.oup.com/ce
+  color: "#027FC9"
+
+"RSS":
+  url: https://roboticsconference.org/
+  color: "#2247D9"

@@ -3,8 +3,36 @@
 
 @string{aps = {American Physical Society,}}
 
+
 @article{einstein1950meaning,
-  abbr        = {RSS'26},
+  abbr        = {Clean Energy},
+  title       = {ChemGrasp: Affordance-Aware Dexterous Grasping for Laboratory Automation},
+  author      = {Liu*, Xuanwei and Shang*, Tiewei and Wang, Rui and Li, Junliang and Pan, Jisong and Wang, Zixin and Chen, Yongquan},
+  year        = {2026},
+  journal     = {Under Review},
+  preview     = {Chemgrasp.png},
+  selected    = {true},
+  arxiv       = {2603.10971},
+  abstract    = {The transition towards sustainable energy systems has catalyzed an urgent demand for accelerated materials
+                  discovery, driving a paradigm shift towards fully automated chemical unmanned laboratories. While multi-fingered
+                  dexterous hands offer the kinematic flexibility required to manipulate complex laboratory glassware, deploying them in
+                  safety-critical chemical environments remains a formidable challenge. Existing data-driven grasping models prioritize
+                  geometric stability but largely overlook strict functional constraints, often producing grasps that catastrophically
+                  occlude vessel openings and cause sample contamination. To address this critical bottleneck, we present ChemGrasp,
+                  an affordance-aware dexterous grasping framework tailored for laboratory automation. Our approach introduces a task-
+                  specific affordance module during the inference phase of a generative model, employing an energy-based optimization
+                  function to strictly penalize semantic violations. Furthermore, to ensure practical executability within constrained
+                  workspaces, ChemGrasp integrates a system-level motion planning pipeline featuring a phased hand execution
+                  strategy, guaranteeing collision-free and kinematically reachable trajectories. Extensive physics-based simulations
+                  demonstrate that ChemGrasp significantly elevates the Safe Success Rate (SSR) by eliminating functional violations,
+                  reliably executing dynamic grasp sequences in both floating and full-pipeline tabletop settings. Ultimately, this
+                  framework bridges the gap between unconstrained robotic dexterity and rigorous laboratory safety protocols, laying
+                  a robust foundation for next-generation autonomous clean energy research.}
+                  }
+
+
+@article{einstein1950meaning,
+  abbr        = {RSS},
   title       = {Contact Coverage-Guided Exploration for General-Purpose Dexterous Manipulation},
   author      = {Liu*, Zixuan and Qiao*, Ruoyi and Tie, Chenrui and Liu, Xuanwei and Lou, Yunfan and Gao, Chongkai and Xu, Zhixuan and Shao, Lin},
   year        = {2026},
@@ -16,3 +44,5 @@
   code        = {https://github.com/ruoyiqiao/CCGE},
   abstract    = {Deep Reinforcement learning (DRL) has achieved remarkable success in domains with well-defined reward structures, such as Atari games and locomotion. In contrast, dexterous manipulation lacks general-purpose reward formulations and typically depends on task-specific, handcrafted priors to guide hand-object interactions. We propose Contact Coverage-Guided Exploration (CCGE), a general exploration method designed for general-purpose dexterous manipulation tasks. CCGE represents contact state as the intersection between object surface points and predefined hand keypoints, encouraging dexterous hands to discover diverse and novel contact patterns, namely which fingers contact which object regions. It maintains a contact counter conditioned on discretized object states obtained via learned hash codes, capturing how frequently each finger interacts with different object regions. This counter is leveraged in two complementary ways: (1) to assign a count-based contact coverage reward that promotes exploration of novel contact patterns, and (2) an energy-based reaching reward that guides the agent toward under-explored contact regions. We evaluate CCGE on a diverse set of dexterous manipulation tasks, including cluttered object singulation, constrained object retrieval, in-hand reorientation, and bimanual manipulation. Experimental results show that CCGE substantially improves training efficiency and success rates over existing exploration methods, and that the contact patterns learned with CCGE transfer robustly to real-world robotic systems.}
 }
+
+
