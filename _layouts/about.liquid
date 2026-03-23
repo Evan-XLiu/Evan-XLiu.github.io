@@ -80,32 +80,49 @@ layout: default
       </div>
 
       <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const wechatLink = document.querySelector('.social .contact-icons a[href*="/assets/img/wechat.jpg"]');
-          const modal = document.getElementById('wechat-modal');
-          const closeBtn = modal ? modal.querySelector('.wechat-modal-close') : null;
+        (function () {
+          const initWechatModal = function () {
+            const modal = document.getElementById('wechat-modal');
+            const closeBtn = modal ? modal.querySelector('.wechat-modal-close') : null;
+            const wechatIcon = document.querySelector('.social .contact-icons i.fa-weixin');
+            const wechatLink = wechatIcon ? wechatIcon.closest('a') : null;
 
-          if (!wechatLink || !modal) return;
+            if (!wechatLink || !modal || wechatLink.dataset.wechatBound === 'true') return;
 
-          wechatLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            modal.classList.add('show');
-            modal.setAttribute('aria-hidden', 'false');
-          });
+            const openModal = function () {
+              modal.classList.add('show');
+              modal.setAttribute('aria-hidden', 'false');
+            };
 
-          const closeModal = function () {
-            modal.classList.remove('show');
-            modal.setAttribute('aria-hidden', 'true');
+            const closeModal = function () {
+              modal.classList.remove('show');
+              modal.setAttribute('aria-hidden', 'true');
+            };
+
+            wechatLink.addEventListener('click', function (e) {
+              e.preventDefault();
+              openModal();
+            });
+
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', function (e) {
+              if (e.target === modal) closeModal();
+            });
+
+            document.addEventListener('keydown', function (e) {
+              if (e.key === 'Escape') closeModal();
+            });
+
+            wechatLink.dataset.wechatBound = 'true';
           };
 
-          if (closeBtn) {
-            closeBtn.addEventListener('click', closeModal);
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initWechatModal);
+          } else {
+            initWechatModal();
           }
-
-          modal.addEventListener('click', function (e) {
-            if (e.target === modal) closeModal();
-          });
-        });
+        })();
       </script>
     {% endif %}
 
