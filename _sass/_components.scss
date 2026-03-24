@@ -275,6 +275,105 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-theme-color);
 }
 
+.about-experience {
+  margin-bottom: 1.5rem;
+}
+
+.about-experience-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.75rem 0;
+  margin-bottom: 0.8rem;
+  color: var(--global-text-color);
+}
+
+.about-experience-logo {
+  width: 110px;
+  height: 100px;
+  border: none;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--global-text-color);
+  flex: 0 0 110px;
+}
+
+.about-experience-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.35rem;
+}
+
+.about-experience-logo i {
+  font-size: 1.2rem;
+}
+
+.about-experience-main {
+  min-width: 0;
+  width: 100%;
+}
+
+.about-experience-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: baseline;
+}
+
+.about-experience-company {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.about-experience-company a {
+  color: inherit;
+}
+
+.about-experience-company a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.about-experience-date {
+  font-size: 0.85rem;
+  color: var(--global-text-color);
+  white-space: nowrap;
+}
+
+.about-experience-role {
+  margin-top: 0.15rem;
+  font-weight: 600;
+}
+
+.about-experience-note {
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+}
+
+@media (max-width: 576px) {
+  .about-experience-item {
+    align-items: flex-start;
+  }
+
+  .about-experience-logo {
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
+  }
+
+  .about-experience-top {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
 // Distill
 
 .distill {

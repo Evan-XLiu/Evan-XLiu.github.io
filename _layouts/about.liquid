@@ -48,6 +48,13 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    {% if page.about_experience and page.about_experience.enabled %}
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}#experience" style="color: inherit">experience</a>
+      </h2>
+      {% include about_experience.liquid limit=page.about_experience.limit %}
+    {% endif %}
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>

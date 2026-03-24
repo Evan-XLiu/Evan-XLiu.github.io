@@ -32,7 +32,7 @@ cv:
         url: https://www.nus.edu.sg/
         # area: Robotics
         studyType: M.Sc. in Robotics
-        start_date: 2026.8
+        start_date: 2026.08
         end_date: Present
         score: ""
         # courses: "Theory of Relativity"
@@ -45,8 +45,8 @@ cv:
         url: https://www.ox.ac.uk/
         area: Artificial Intelligence and Machine Learning
         studyType: Visiting Student of Lady Margaret Hall 
-        start_date: 2024.8
-        end_date: 2024.8
+        start_date: 2024.08
+        end_date: 2024.08
         highlights:
           - "GPA: 85(A+)"
           - Fully founded
@@ -56,8 +56,8 @@ cv:
         url: http://en.hitsz.edu.cn/
         # area: Physics
         studyType: B.Eng. in Automation
-        start_date: 2022.8
-        end_date: 2026.7
+        start_date: 2022.08
+        end_date: 2026.07
         # courses: "Automation Control Theory, System Modeling and Simulation, Signal Analysis and Processing, Electric Circuit, Probability Theory and Mathematical Statistics"
         highlights:
           - "GPA: 88.4"
@@ -66,22 +66,23 @@ cv:
 
     Employment:
       - company: Roboscience
-        position: Robotics Research Intern
-        url: https://airs.cuhk.edu.cn/en
+        position: Robotics Algorithm Intern
+        url: https://en.roboscience.co/
         location: Shenzhen, China
-        start_date: 2026.3
-        end_date: 2026.7
+        logo: /assets/img/experience/Roboscience.jpg
+        start_date: 2026.03
+        end_date: Present
         # summary: Optional short description.
         highlights:
-          - Advised by Prof.Lin Shao
-        #   - Responsibility or achievement 2.
+
 
       - company: Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)
         position: Dexterous Manipulation Research Intern
         url: https://airs.cuhk.edu.cn/en
         location: Shenzhen, China
+        logo: /assets/img/experience/AIRS.jpeg
         start_date: 2025.11
-        end_date: 2026.3
+        end_date: 2026.03
         # summary: Optional short description.
         highlights:
           - Advised by Prof.Yongquan Chen
@@ -91,8 +92,9 @@ cv:
         position: Software Intern
         location: Shenzhen, China
         url: https://www.cet-global.com/
-        start_date: 2025.1
-        end_date: 2025.3
+        logo: /assets/img/experience/CET.jpg
+        start_date: 2025.01
+        end_date: 2025.03
         # summary: Optional short description.
         # highlights:
         #   - Responsibility or achievement 1.
@@ -103,6 +105,7 @@ cv:
         position: Research Assistant
         location: Singapore
         url: https://linsats.github.io/
+        logo: /assets/img/experience/LinsLab.jpg
         start_date: 2025.12
         end_date: Present
         # summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
@@ -114,11 +117,12 @@ cv:
         position: Research Assistant
         location: Shenzhen, China
         url: https://pwalclab.com/public/index.php?title=Main_Page
-        start_date: 2025.6
-        end_date: 2025.9
+        logo: /assets/img/experience/XUjun_lab.jpg
+        start_date: 2025.06
+        end_date: 2025.09
         # summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
         highlights:
-          - Advised by Prof.Jun XU
+          - Advised by Prof.Jun Xu
           # - Description 2.
 
 

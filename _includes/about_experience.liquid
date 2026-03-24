@@ -1,0 +1,52 @@
+{% assign cv_data = site.data.cv.cv %}
+{% assign exp_entries = cv_data.sections.Experience | default: empty %}
+{% assign emp_entries = cv_data.sections.Employment | default: empty %}
+{% assign merged_entries = exp_entries | concat: emp_entries %}
+{% assign merged_entries = merged_entries | sort: "start_date" | reverse %}
+
+{% if merged_entries and merged_entries.size > 0 %}
+  <div class="about-experience">
+    {% if include.limit %}
+      {% assign experience_limit = include.limit %}
+    {% else %}
+      {% assign experience_limit = merged_entries.size %}
+    {% endif %}
+
+    {% for entry in merged_entries limit: experience_limit %}
+      {% assign company_name = entry.company | default: entry.organization | default: entry.name %}
+      {% assign role_name = entry.position | default: entry.role %}
+      {% assign start_date = entry.start_date | default: entry.startDate %}
+      {% assign end_date = entry.end_date | default: entry.endDate | default: "Present" %}
+      <div class="about-experience-item">
+        <div class="about-experience-logo">
+          {% if entry.logo %}
+            <img src="{{ entry.logo | relative_url }}" alt="{{ company_name }} logo">
+          {% else %}
+            <i class="fa-solid fa-briefcase"></i>
+          {% endif %}
+        </div>
+
+        <div class="about-experience-main">
+          <div class="about-experience-top">
+            <div class="about-experience-company">
+              {% if entry.url %}
+                <a href="{{ entry.url }}">{{ company_name }}</a>
+              {% else %}
+                {{ company_name }}
+              {% endif %}
+            </div>
+            <div class="about-experience-date">{{ start_date }} - {{ end_date }}</div>
+          </div>
+
+          {% if role_name %}
+            <div class="about-experience-role">{{ role_name }}</div>
+          {% endif %}
+
+          {% if entry.highlights and entry.highlights.size > 0 %}
+            <div class="about-experience-note">{{ entry.highlights[0] }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
