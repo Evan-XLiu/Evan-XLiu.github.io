@@ -37,8 +37,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-bachelor-s-graduation-project",
-          title: 'Bachelor’s Graduation Project',
+        },{id: "projects-bachelor-39-s-graduation-project-thesis-https-github-com-evan-xliu-hitsz-thesis",
+          title: 'Bachelor&amp;#39;s Graduation Project ([Thesis](https://github.com/Evan-XLiu/HITsz-thesis))',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/BEngraduation/";
