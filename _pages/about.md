@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: No cross, no crown.
+subtitle: HITSZ | NUS | RoboScience | AIRS
 
 profile:
   align: right

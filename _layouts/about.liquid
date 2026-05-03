@@ -48,13 +48,6 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    {% if page.about_experience and page.about_experience.enabled %}
-      <h2>
-        <a href="{{ '/cv/' | relative_url }}#experience" style="color: inherit">experience</a>
-      </h2>
-      {% include about_experience.liquid limit=page.about_experience.limit %}
-    {% endif %}
-
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
@@ -69,6 +62,13 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    {% if page.about_experience and page.about_experience.enabled %}
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}#experience" style="color: inherit">experience</a>
+      </h2>
+      {% include about_experience.liquid limit=page.about_experience.limit %}
     {% endif %}
 
     <!-- Social -->

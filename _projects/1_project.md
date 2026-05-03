@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Bachelor’s Graduation Project
-description: 
+title: "Bachelor's Graduation Project ([Thesis](https://github.com/Evan-XLiu/HITsz-thesis))"
+markdown_title: true
+description:
 img: assets/img/g1.jpg
 permalink: /projects/BEngraduation/
 importance: 1
@@ -10,7 +11,7 @@ related_publications: false
 display: true # true 显示在 projects 页和搜索中，false 隐藏
 ---
 
-《Complex Motion Skill Learning and Generalization of Humanoid Robots Based on Imitation Learning and Reinforcement Learning》(Based on [ASAP](https://agile.human2humanoid.com/)).
+《Research On Humanoid Robot Motion Skill Learning And Generalization Based On Reinforcement Learning》(Based on [ASAP](https://agile.human2humanoid.com/).)
 
 
 Database: [AMASS](https://amass.is.tue.mpg.de/index.html)
