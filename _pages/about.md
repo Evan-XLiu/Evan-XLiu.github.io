@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: HITSZ | NUS | RoboScience | AIRS
+subtitle: HITSZ | NUS | RoboScience
 
 profile:
   align: right
@@ -31,6 +31,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am Xuanwei Liu (刘轩伟), an Undergraduate student in Automation at the Harbin Institute of Technology, Shenzhen [(HITSZ)](http://en.hitsz.edu.cn/). I am currently advised by Prof. [Lin Shao](https://linsats.github.io/) at the NUS LinS Lab and Prof. [Yongquan Chen](https://scholar.google.com/citations?user=1t1iV1AAAAAJ&hl=zh-CN&oi=ao) at [AIRS](https://airs.cuhk.edu.cn/en). Previously, I was a research assistant at the [Piecewise Affine Learning & Control Lab](https://pwalclab.com/public/index.php?title=Main_Page), advised by Prof. [Jun Xu](https://scholar.google.com/citations?hl=zh-CN&user=bsD6IowAAAAJ). In Fall 2026, I will join National University of Singapore [(NUS)](https://nus.edu.sg/) as an incoming M.Sc. student in Robotics.
+Hi! I am Xuanwei Liu (刘轩伟). I am currently a Master's student in Robotics at the [National University of Singapore (NUS)](https://nus.edu.sg/) and work as a research assistant advised by Prof. [Lin Shao](https://linsats.github.io/) at the NUS LinS Lab. Previously, I was a research intern in dexterous manipulation at [AIRS](https://airs.cuhk.edu.cn/en), advised by Prof. [Yongquan Chen](https://scholar.google.com/citations?user=1t1iV1AAAAAJ&hl=zh-CN&oi=ao). I also collaborated with Prof. [Jun Xu](https://scholar.google.com/citations?hl=zh-CN&user=bsD6IowAAAAJ) at the [Piecewise Affine Learning & Control Lab](https://pwalclab.com/public/index.php?title=Main_Page). I received my Bachelor's degree in Automation from the [Harbin Institute of Technology, Shenzhen (HITSZ)](http://en.hitsz.edu.cn/).
+
+
+<!-- Harbin Institute of Technology, Shenzhen [(HITSZ)](http://en.hitsz.edu.cn/). I am currently advised by Prof. [Lin Shao](https://linsats.github.io/) at the NUS LinS Lab and Prof. [Yongquan Chen](https://scholar.google.com/citations?user=1t1iV1AAAAAJ&hl=zh-CN&oi=ao) at [AIRS](https://airs.cuhk.edu.cn/en). Previously, I was a research assistant at the [Piecewise Affine Learning & Control Lab](https://pwalclab.com/public/index.php?title=Main_Page), advised by Prof. [Jun Xu](https://scholar.google.com/citations?hl=zh-CN&user=bsD6IowAAAAJ). 
+
+In Fall 2026, I will join National University of Singapore [(NUS)](https://nus.edu.sg/) as an incoming M.Sc. student in Robotics. -->
 
 My research interest
