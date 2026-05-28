@@ -1,11 +1,11 @@
 primary_name: "Xuanwei Liu"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Xuanwei Liu (Evan)"
 
 positions:
 - name: M.Sc. Student in Robotics
 - name: NUS
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+  logo: /assets/images/badges/NUS.png  # Logo is optional
 
 
 email: "zerthry@gmail.com"
@@ -22,12 +22,23 @@ wechat_qrcode: /assets/images/etc/wechat.jpg
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Hi! I am Xuanwei Liu (刘轩伟). I am currently a Master's student in Robotics at the
+    <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore (NUS)</a>
+    and work as a research assistant advised by Prof.
+    <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">Lin Shao</a>
+    at the NUS LinS Lab. Previously, I was a research intern in dexterous manipulation at
+    <a href="https://airs.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">AIRS</a>,
+    advised by Prof.
+    <a href="https://scholar.google.com/citations?user=1t1iV1AAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Yongquan Chen</a>.
+    I received my Bachelor's degree in Automation from the
+    <a href="http://en.hitsz.edu.cn/" target="_blank" rel="noopener noreferrer">Harbin Institute of Technology, Shenzhen (HITSZ)</a>.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My research interests lie in dexterous manipulation, reinforcement learning, world action models. 
+    I aim to develop intelligent robotic systems that can learn complex skills, reason about physical interactions, and generalize to real-world manipulation scenarios.
+  </p>
+  <p>
+    Feel free to contact me if you are interested in discussing or collaborating with me.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -45,17 +56,16 @@ education:
   position: >- 
     Visiting Student, AI Summer Programme
   date: Aug. 2024
-- name: Harbin Institute of Technology,Shenzhen
+- name: Harbin Institute of Technology, Shenzhen
   logo: /assets/images/badges/HIT.png
   position: B.Eng. in Automation
   date: Aug. 2022 - Jul. 2026
 
 experience:
 - name: RoboScience
-  logo: /assets/images/badges/RBS.png
   position: Manipulation Algorithm Intern
   date: Mar. 2026 - Present
-- name: LinsLab
+- name: LinsLab, NUS
   logo: /assets/images/badges/Linslab.png
   position: Research Intern
   date: Dec. 2025 - Present
