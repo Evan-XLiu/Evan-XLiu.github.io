@@ -2,7 +2,7 @@
 show: true
 width: 4
 date: 2049-09-12 00:01:00 +0800
-height: 600px
+height: 650px
 images:
 - src: /assets/images/photos/2_3.JPG
   title: 東京スカイツリー
@@ -11,10 +11,12 @@ images:
   title: White Cliffs
 - src: /assets/images/photos/3_2.JPG
   title: 渋谷スカイ
-  
 - src: /assets/images/photos/1_1.JPG
   title: 麥理浩徑
   desc: A Perfect Hiking Trail🥾
+- src: /assets/images/photos/DSC_3741.JPG
+  title: 東京タワー
+  # desc: A Perfect Hiking Trail🥾
 ---
 
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
