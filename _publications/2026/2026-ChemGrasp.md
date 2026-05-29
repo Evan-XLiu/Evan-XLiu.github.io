@@ -13,7 +13,7 @@ abstract: >-
 
 covers:   
   # - /assets/images/covers/ContactExplorer_1.png
-  - /assets/images/covers/ChemGrasp.png
+  - /assets/images/covers/ChemGrasp_AIRS.png
 
 authors:
   - Xuanwei Liu*
