@@ -24,7 +24,7 @@ authors:
   - Zhixuan Xu
   - Lin Shao
 links:
-  arXiv:
+  arXiv: https://arxiv.org/abs/2603.10971
   Code: https://github.com/ruoyiqiao/ContactExplorer
   Website: https://contact-explorer.github.io/
 ---
