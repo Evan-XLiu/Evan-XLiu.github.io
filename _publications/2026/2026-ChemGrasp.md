@@ -25,7 +25,7 @@ authors:
   - Yongquan Chen
   
 links:
-  arXiv:
+  Paper:
 #   Code: https://github.com/ruoyiqiao/ContactExplorer
 #   Website: https://contact-explorer.github.io/
 ---
