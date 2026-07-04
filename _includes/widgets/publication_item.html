@@ -4,6 +4,7 @@
     {% assign cover_images = item.cover | split: "|||" %}
 {% endif %}
 {% assign primary_cover = cover_images | first %}
+{% assign pub_post = item.pub_post | default: "" | strip %}
 <div class="d-none d-md-block">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-5 col-xl-4 mb-md-0 p-md-3">
@@ -20,7 +21,10 @@
         <div class="col-md-7 col-xl-8 p-3 pl-md-0">
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            <p class="mt-0 mb-0 small">{{ item.pub_pre }}<i>{{ item.pub }}</i>{% if pub_post != "" %} {{ pub_post }}{% endif %} {{ item.pub_date }}{{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            {% if item.pub_note %}
+            <p class="mt-1 mb-0 publication-note"><i class="fas fa-star"></i> {{ item.pub_note }} <i class="fas fa-star"></i></p>
+            {% endif %}
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
@@ -51,7 +55,10 @@
                 {% endif %}
                 <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
                 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                <p class="mt-0 mb-0 small">{{ item.pub_pre }}<i>{{ item.pub }}</i>{% if pub_post != "" %} {{ pub_post }}{% endif %} {{ item.pub_date }}{{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                {% if item.pub_note %}
+                <p class="mt-1 mb-0 publication-note"><i class="fas fa-star"></i> {{ item.pub_note }} <i class="fas fa-star"></i></p>
+                {% endif %}
                 <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
                 
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">

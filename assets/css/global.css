@@ -161,6 +161,17 @@ div.lazy {
     font-size: 100%;
 }
 
+.publication-note {
+    color: #234AE2;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.publication-note .fa-star {
+    margin: 0.10rem 0.10rem;
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }
