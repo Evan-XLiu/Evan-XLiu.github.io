@@ -25,7 +25,7 @@ authors:
   - Yongquan Chen
   
 links:
-  Paper:
+  Paper: https://academic.oup.com/ce/advance-article/doi/10.1093/ce/zkag038/8723950?login=false
 #   Code: https://github.com/ruoyiqiao/ContactExplorer
 #   Website: https://contact-explorer.github.io/
 ---
