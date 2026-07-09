@@ -2,7 +2,7 @@
 title:          "ContactExplorer: Contact Coverage-Guided Exploration for General-Purpose Dexterous Manipulation"
 date:           2026-05-12 00:01:00 +0800
 selected:       true
-pub:            "Conference on Robot Learning (CoRL)"
+pub:            "CoRL 2026, Conference on Robot Learning"
 pub_pre:        "Submitted to "
 pub_post:       'Under review.'
 pub_date:       "2026"

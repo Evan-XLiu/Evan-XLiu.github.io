@@ -4,6 +4,7 @@
     --evan-navbar-link: #495057;
     --evan-navbar-link-hover: #111111;
     --evan-navbar-active: #111111;
+    --publication-title-font-size: 1.15rem;
 }
 
 body {
@@ -137,6 +138,10 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
 }
 
+.publication-title {
+    font-size: var(--publication-title-font-size);
+}
+
 .abstract-body {
     min-height: 100px;
 }
@@ -161,13 +166,23 @@ div.lazy {
     font-size: 100%;
 }
 
-.publication-note {
-    color: #234AE2;
-    font-size: 85%;
-    font-weight: 700;
+.publication-meta {
+    font-size: 90%;
     line-height: 1.2;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
+.publication-note {
+    color: #234AE2;
+    font-size: 90%;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.publication-meta .fa-star,
 .publication-note .fa-star {
     margin: 0.10rem 0.10rem;
 }
