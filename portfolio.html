@@ -1,0 +1,114 @@
+---
+layout: default
+title: Portfolio
+navbar_title: Showcase
+container_class: container-xl
+permalink: /portfolio/
+---
+
+<div class="showcase-content-10">
+<header class="collection-header">
+    <a class="collection-back" href="{{ '/showcase/' | relative_url }}"><i class="fas fa-arrow-left mr-2"></i>Showcase</a>
+    <p class="showcase-kicker mt-4 mb-2">Photography &amp; places</p>
+    <h1>Portfolio</h1>
+    <p class="lead text-muted">Explore photographs through the places where they were captured.</p>
+</header>
+
+<section class="globe-section" aria-label="Interactive travel globe">
+    <div class="globe-stage" id="portfolio-globe"><div class="globe-loading">Loading the world…</div></div>
+    <div class="globe-city-list" aria-label="Cities with photographs">
+        {% for place in site.data.portfolio %}{% if place.illuminated %}
+        <button type="button" data-city="{{ place.slug }}"><span class="city-marker-dot"></span><span><strong>{{ place.city }}{% if place.english_name != place.city %} / {{ place.english_name }}{% endif %}</strong><small>{{ place.country }} · {{ place.photos | size }} photo{% unless place.photos.size == 1 %}s{% endunless %}</small></span></button>
+        {% endif %}{% endfor %}
+    </div>
+    <p class="globe-hint"><i class="fas fa-hand-pointer mr-2"></i>Drag to explore · Select a city · Click the globe to reset</p>
+</section>
+
+<div class="portfolio-results" id="portfolio-results" aria-live="polite">
+{% for place in site.data.portfolio %}{% if place.illuminated %}
+<section class="city-section" id="{{ place.slug }}" data-city-panel="{{ place.slug }}" hidden>
+    <div class="city-heading"><div><p class="showcase-kicker mb-1">{{ place.country }}</p><h2>{{ place.city }}{% if place.english_name != place.city %} / {{ place.english_name }}{% endif %}</h2></div><p>{{ place.description }}</p></div>
+    {% if place.photos.size > 0 %}
+    <div class="portfolio-grid">
+        {% for photo in place.photos %}
+        <figure class="portfolio-photo {% cycle 'portfolio-photo-tall', 'portfolio-photo-wide', 'portfolio-photo-standard' %}">
+            <img class="lazy" data-src="{{ photo.src | relative_url }}" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="{{ photo.title }}">
+            <figcaption><strong>{{ photo.title }}</strong>{% if photo.caption %}<span>{{ photo.caption }}</span>{% endif %}</figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="portfolio-empty card border-0 shadow-sm"><i class="far fa-images"></i><p class="mb-0">Photos coming soon.</p></div>
+    {% endif %}
+</section>
+{% endif %}{% endfor %}
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var root = document.getElementById('portfolio-globe');
+    if (!root || typeof d3 === 'undefined' || typeof topojson === 'undefined') return;
+    var cities = [{% assign active_places = site.data.portfolio | where: "illuminated", true %}{% for place in active_places %}{slug: {{ place.slug | jsonify }}, name: {% capture place_label %}{{ place.city }}{% if place.english_name != place.city %} / {{ place.english_name }}{% endif %}{% endcapture %}{{ place_label | strip | jsonify }}, coordinates: [{{ place.longitude }}, {{ place.latitude }}]}{% unless forloop.last %},{% endunless %}{% endfor %}];
+    var width = 800, height = 540, baseScale = 215;
+    var projection = d3.geoOrthographic().translate([width / 2, height / 2]).scale(baseScale).clipAngle(90).rotate([-15, -18]);
+    var path = d3.geoPath(projection);
+    var svg = d3.select(root).append('svg').attr('viewBox', '0 0 ' + width + ' ' + height).attr('role', 'img').attr('aria-label', 'Interactive globe showing cities with photographs');
+    var sphere = svg.append('path').datum({type: 'Sphere'}).attr('class', 'globe-ocean');
+    var countryLayer = svg.append('g'), markerLayer = svg.append('g');
+    var selected = null, autoRotate = true, lastTime = performance.now();
+
+    function redraw() {
+        sphere.attr('d', path); countryLayer.selectAll('path').attr('d', path);
+        markerLayer.selectAll('g').attr('transform', function (d) {
+            var point = projection(d.coordinates); return point ? 'translate(' + point[0] + ',' + point[1] + ')' : 'translate(-100,-100)';
+        }).style('display', function (d) {
+            var center = [-projection.rotate()[0], -projection.rotate()[1]];
+            return d3.geoDistance(d.coordinates, center) < Math.PI / 2 ? null : 'none';
+        });
+    }
+    function selectCity(city) {
+        selected = city.slug; autoRotate = false;
+        document.querySelectorAll('[data-city]').forEach(function (button) { button.classList.toggle('active', button.dataset.city === city.slug); });
+        document.querySelectorAll('[data-city-panel]').forEach(function (panel) { panel.hidden = panel.dataset.cityPanel !== city.slug; });
+        markerLayer.selectAll('g').classed('active', function (d) { return d.slug === city.slug; });
+        d3.transition().duration(1100).ease(d3.easeCubicInOut).tween('rotate-globe', function () {
+            var rotate = d3.interpolate(projection.rotate(), [-city.coordinates[0], -city.coordinates[1], 0]);
+            var scale = d3.interpolate(projection.scale(), baseScale * 1.58);
+            return function (t) { projection.rotate(rotate(t)).scale(scale(t)); redraw(); };
+        }).on('end', function () {
+            var panel = document.querySelector('[data-city-panel="' + city.slug + '"]');
+            if (panel && window.innerWidth < 768) panel.scrollIntoView({behavior: 'smooth', block: 'start'});
+            if (window.jQuery && typeof lazyLoadOptions !== 'undefined') window.jQuery(panel).find('img.lazy').Lazy({visibleOnly: true, ...lazyLoadOptions});
+        });
+    }
+    function resetGlobe() {
+        if (!selected) return;
+        selected = null;
+        document.querySelectorAll('[data-city]').forEach(function (button) { button.classList.remove('active'); });
+        document.querySelectorAll('[data-city-panel]').forEach(function (panel) { panel.hidden = true; });
+        markerLayer.selectAll('g').classed('active', false);
+        d3.transition().duration(850).ease(d3.easeCubicInOut).tween('reset-globe', function () {
+            var scale = d3.interpolate(projection.scale(), baseScale);
+            return function (t) { projection.scale(scale(t)); redraw(); };
+        }).on('end', function () { autoRotate = true; lastTime = performance.now(); });
+    }
+    d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(function (world) {
+        root.querySelector('.globe-loading').remove();
+        var countries = topojson.feature(world, world.objects.countries).features;
+        countryLayer.selectAll('path').data(countries).join('path').attr('class', 'globe-country');
+        var markers = markerLayer.selectAll('g').data(cities).join('g').attr('class', 'globe-marker').attr('tabindex', 0).attr('role', 'button').attr('aria-label', function (d) { return 'View photos from ' + d.name; });
+        markers.append('circle').attr('class', 'globe-marker-pulse').attr('r', 12);
+        markers.append('circle').attr('class', 'globe-marker-core').attr('r', 5);
+        markers.append('text').attr('x', 12).attr('y', 4).text(function (d) { return d.name; });
+        markers.on('click', function (event, d) { event.stopPropagation(); selectCity(d); }).on('keydown', function (event, d) { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectCity(d); } });
+        redraw();
+        svg.on('click', function (event) { if (!event.defaultPrevented) resetGlobe(); });
+        svg.call(d3.drag().on('start', function () { autoRotate = false; }).on('drag', function (event) { var r = projection.rotate(); projection.rotate([r[0] + event.dx * .35, Math.max(-75, Math.min(75, r[1] - event.dy * .35)), r[2]]); redraw(); }));
+        d3.timer(function (now) { var elapsed = now - lastTime; lastTime = now; if (autoRotate && !selected) { var r = projection.rotate(); projection.rotate([r[0] + elapsed * .004, r[1], r[2]]); redraw(); } });
+    }).catch(function () { root.querySelector('.globe-loading').textContent = 'The globe could not be loaded.'; });
+    document.querySelectorAll('[data-city]').forEach(function (button) { button.addEventListener('click', function () { var city = cities.find(function (item) { return item.slug === button.dataset.city; }); if (city) selectCity(city); }); });
+});
+</script>

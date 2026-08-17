@@ -1,0 +1,74 @@
+- city: 東京
+  english_name: Tokyo
+  country: Japan
+  slug: tokyo
+  illuminated: true
+  latitude: 35.6762
+  longitude: 139.6503
+  cover: /assets/images/photos/2_3.JPG
+  description: Light, geometry, and fleeting skies across Tokyo.
+  photos:
+    - src: /assets/images/photos/2_3.JPG
+      title: Tokyo Skytree
+      caption: A lucky day under the rainbow.
+    - src: /assets/images/photos/3_2.JPG
+      title: Shibuya Sky
+    - src: /assets/images/photos/DSC_3741.JPG
+      title: Tokyo Tower
+
+- city: 香港
+  english_name: Hong Kong
+  country: China
+  slug: hong-kong
+  illuminated: true
+  latitude: 22.3193
+  longitude: 114.1694
+  cover: /assets/images/photos/1_1.JPG
+  description: Trails, ridgelines, and open space beyond the city.
+  photos:
+    - src: /assets/images/photos/1_1.JPG
+      title: MacLehose Trail
+      caption: A perfect hiking trail.
+- city: Singapore
+  english_name: Singapore
+  country: Singapore
+  slug: singapore
+  illuminated: true
+  latitude: 1.3521
+  longitude: 103.8198
+  cover:
+  description: A collection in progress.
+  photos: []
+
+- city: 臺灣
+  english_name: Taiwan
+  country: China
+  slug: taiwan
+  illuminated: true
+  latitude: 23.6978
+  longitude: 120.9605
+  description: A collection in progress.
+  photos: []
+
+- city: 海南
+  english_name: Hainan
+  country: China
+  slug: hainan
+  illuminated: true
+  latitude: 19.1959
+  longitude: 109.7453
+  description: A collection in progress.
+  photos: []
+
+- city: London
+  english_name: London
+  country: UK
+  slug: united-kingdom
+  illuminated: true
+  latitude: 51.5072
+  longitude: -0.1276
+  cover: /assets/images/photos/1_4.JPG
+  description: Photographs from London, Oxford, and the southern coast of England.
+  photos:
+    - src: /assets/images/photos/1_4.JPG
+      title: Seven Sisters Cliffs

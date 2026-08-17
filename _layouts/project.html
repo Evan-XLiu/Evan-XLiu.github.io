@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="project-detail showcase-content-10">
+    <a class="collection-back" href="{{ '/projects/' | relative_url }}"><i class="fas fa-arrow-left mr-2"></i>All projects</a>
+    <header class="project-detail-header">
+        <p class="showcase-kicker mb-2">{{ page.category }} · {{ page.date | date: "%Y" }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="lead text-muted">{{ page.summary }}</p>
+        {% if page.links %}
+        <div class="project-links">
+            {% for link in page.links %}
+            {% if link[1] %}<a class="btn btn-dark mr-2 mb-2" href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] }} <i class="fas fa-arrow-up-right-from-square ml-1"></i></a>{% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </header>
+    <img class="project-hero rounded-xl shadow-sm" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+    <div class="project-detail-body card border-0 shadow-sm bg-white">
+        {{ content }}
+    </div>
+</article>

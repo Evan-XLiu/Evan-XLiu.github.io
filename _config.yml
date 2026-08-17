@@ -39,7 +39,10 @@ plugins:
 # timezone: Asia/Shanghai
 
 collections:
-  - publications
-  - news
-  - showcase
-  - posts
+  publications:
+  news:
+  showcase:
+  posts:
+  projects:
+    output: true
+    permalink: /projects/:name/

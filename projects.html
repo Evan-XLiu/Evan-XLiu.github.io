@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+navbar_title: Showcase
+container_class: container-xl
+permalink: /projects/
+---
+
+<div class="showcase-content-10">
+<header class="collection-header">
+    <a class="collection-back" href="{{ '/showcase/' | relative_url }}"><i class="fas fa-arrow-left mr-2"></i>Showcase</a>
+    <p class="showcase-kicker mt-4 mb-2">Research &amp; engineering</p>
+    <h1>Projects</h1>
+    <p class="lead text-muted">A closer look at the questions, systems, and collaborative work behind my research.</p>
+</header>
+
+{% assign projects = site.projects | sort: "date" | reverse %}
+<div class="row project-grid">
+    {% for project in projects %}
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a class="project-card card border-0 shadow-sm" href="{{ project.url | relative_url }}">
+            <div class="project-card-media">
+                <img class="lazy" data-src="{{ project.cover | relative_url }}" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="{{ project.title }}">
+            </div>
+            <div class="card-body p-4">
+                <div class="project-card-meta mb-2">{{ project.category }} · {{ project.date | date: "%Y" }}</div>
+                <h2 class="h4">{{ project.title }}</h2>
+                <p class="text-muted mb-3">{{ project.summary }}</p>
+                <span class="project-card-link">View project <i class="fas fa-arrow-right ml-2"></i></span>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+</div>
