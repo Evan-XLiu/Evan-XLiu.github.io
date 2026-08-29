@@ -12,23 +12,25 @@ email: "xuanweiliu@u.nus.edu"
 # cv_link: link-to-your-cv-file
 gscholar: WskJ5W0AAAAJ&hl=zh-CN  # This is an example, replace it with your own Google Scholar ID
 github: Evan-XLiu
+linkedin: xuanwei-liu-08aba435a
 twitter: Xuanwei_Liu  # Do not include the '@' symbol
 wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
 # orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hi! I am Xuanwei Liu (刘轩伟). I am currently a Master's student in Robotics at the
-    <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore (NUS)</a>
-    and work as a research intern advised by Prof.
-    <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">Lin Shao</a>
-    at the NUS LinS Lab. Previously, I was a research intern in dexterous manipulation at
-    <a href="https://airs.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">AIRS</a>,
-    advised by Prof.
+    I am currently a Master's student in Robotics at the
+    <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore (NUS)</a>,
+    where I am conducting research at the <a href="https://magiclab-nus.github.io/" target="_blank" rel="noopener noreferrer">MAGIC Lab</a>
+    under the supervision of Prof. <a href="https://jiafei1224.github.io/" target="_blank" rel="noopener noreferrer">Jiafei Duan</a>.
+    Prior to this,
+    I previously worked as a research intern at the LinS Lab,
+    advised by Prof. <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">Lin Shao</a>, and at
+    <a href="https://airs.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">AIRS</a>, where I worked on dexterous manipulation
+    under the supervision of Prof.
     <a href="https://scholar.google.com/citations?user=1t1iV1AAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Yongquan Chen</a>.
     I received my Bachelor's degree in Automation from the
     <a href="http://en.hitsz.edu.cn/" target="_blank" rel="noopener noreferrer">Harbin Institute of Technology, Shenzhen (HITSZ)</a>.
@@ -63,13 +65,17 @@ education:
   date: Aug. 2022 - Jul. 2026
 
 experience:
+- name: MAGIC Lab, NUS
+  logo: /assets/images/badges/MAGIC1.png
+  position: Research Intern
+  date: Aug. 2026 - Present
 - name: RoboScience
   position: Manipulation Algorithm Intern
   date: Mar. 2026 - July. 2026
 - name: LinsLab, NUS
   logo: /assets/images/badges/Linslab.png
   position: Research Intern
-  date: Dec. 2025 - Present
+  date: Dec. 2025 - Aug. 2026
 - name: AIRS
   logo: /assets/images/badges/AIRS.png
   position: Dexterous Manipulation Intern

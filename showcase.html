@@ -6,41 +6,28 @@ container_class: container-xl
 permalink: /showcase/
 ---
 
-<div class="showcase-content-10">
-<section class="showcase-intro card border-0 shadow-sm bg-white mb-4">
-    <div class="p-4">
-        <p class="showcase-kicker mb-2">Beyond research</p>
-        <h1 class="mb-3">Hi, there!</h1>
-        <p class="lead mb-0">
-            Beyond research, I am passionate about <code>music 🎶</code> and <code>photography 📷</code>. As a drummer, I am especially drawn to jazz, fusion, and funk, where rhythm, improvisation, and groove come together to create expressive and dynamic performances. I was honored to receive First Prize at the Hong Kong International Music Festival with my band 🏆. As a photography enthusiast, I love capturing moments, landscapes, and stories through my lens. My dream is to explore every corner of the world and record its diverse beauty along the way.
-        </p>
-    </div>
-</section>
+{% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
-<div class="row showcase-portals">
-    <div class="col-lg-6 mb-4">
-        <a class="showcase-portal showcase-portal-projects" href="{{ '/projects/' | relative_url }}">
-            <img src="{{ '/assets/images/covers/ContactExplorer.gif' | relative_url }}" alt="Robotics project preview">
-            <span class="showcase-portal-shade"></span>
-            <span class="showcase-portal-content">
-                <span class="showcase-portal-index">01</span>
-                <span class="showcase-portal-title">Projects</span>
-                <span class="showcase-portal-description">Research, robotics, and the ideas behind each project.</span>
-                <span class="showcase-portal-link">Explore projects <i class="fas fa-arrow-right ml-2"></i></span>
-            </span>
-        </a>
+{% for group in cards_by_group %}
+{% if group.name != "" %}<h1>{{ group.name }}</h1>{% endif %}
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    {% for item in group.items %}
+    {% if item.width >= 6 -%}
+        {%- assign width_sm = 12 -%}
+        {%- assign width_xs = 12 -%}
+    {%- elsif item.width >= 2 -%}
+        {%- assign width_sm = 6 -%}
+        {%- assign width_xs = 6 -%}
+    {%- else -%}
+        {%- assign width_sm = item.width | times: 2 | at_most: 12 -%}
+        {%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
+    {%- endif -%}
+    <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
+        <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
+            {{ item.content }}
+        </div>
     </div>
-    <div class="col-lg-6 mb-4">
-        <a class="showcase-portal showcase-portal-portfolio" href="{{ '/portfolio/' | relative_url }}">
-            <img src="{{ '/assets/images/photos/2_3.JPG' | relative_url }}" alt="Tokyo Skytree photography preview">
-            <span class="showcase-portal-shade"></span>
-            <span class="showcase-portal-content">
-                <span class="showcase-portal-index">02</span>
-                <span class="showcase-portal-title">Portfolio</span>
-                <span class="showcase-portal-description">Photography and stories collected city by city.</span>
-                <span class="showcase-portal-link">View portfolio <i class="fas fa-arrow-right ml-2"></i></span>
-            </span>
-        </a>
-    </div>
+    {% endfor %}
 </div>
-</div>
+{% endfor %}

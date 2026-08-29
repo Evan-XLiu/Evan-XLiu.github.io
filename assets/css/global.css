@@ -203,6 +203,7 @@ div.lazy {
 .showcase-kicker { color: #6d7f91; font-size: .76rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .showcase-intro .lead { font-size: 1.08rem; line-height: 1.8; }
 .showcase-portal { display: block; height: 390px; overflow: hidden; position: relative; border-radius: .8rem; color: #fff; box-shadow: 0 .3rem 1rem rgba(24, 35, 48, .12); }
+.showcase-portal-compact { height: 320px; }
 .showcase-portal:hover { color: #fff; text-decoration: none; }
 .showcase-portal img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
 .showcase-portal-projects img { object-position: center; }
@@ -211,6 +212,7 @@ div.lazy {
 .showcase-portal-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 2.25rem; }
 .showcase-portal-index { position: absolute; top: 2rem; left: 2.25rem; font: 700 .85rem "Source Code Pro", monospace; letter-spacing: .12em; }
 .showcase-portal-title { font-size: 2.35rem; font-weight: 800; }
+.showcase-portal-compact .showcase-portal-title { font-size: 1.75rem; line-height: 1.15; }
 .showcase-portal-description { max-width: 390px; margin: .5rem 0 1.4rem; color: rgba(255,255,255,.82); }
 .showcase-portal-link, .project-card-link { font-weight: 700; }
 
