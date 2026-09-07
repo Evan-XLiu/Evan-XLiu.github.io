@@ -5,7 +5,7 @@ selected:       true
 pub_note:
   # - "In Submission"
   # - "ICRA 2027, IEEE International Conference on Robotics and Automation"
-  - "IROS 2026 @ Bimanual Robot Learning"
+  - "IROS 2026 Workshop on Bimanual Robot Learning"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   TL;DR: ManiLadder introduces a difficulty-calibrated benchmark for robotic manipulation, using standardized imitation learning performance to organize diverse tasks into a structured ladder for measuring progress in robot learning.
