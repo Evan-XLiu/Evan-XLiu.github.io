@@ -166,14 +166,8 @@ div.lazy {
     font-size: 100%;
 }
 
-.publication-meta {
-    font-size: 90%;
-    line-height: 1.2;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-
 .publication-note {
+    display: block;
     color: #234AE2;
     font-size: 90%;
     font-weight: 700;
@@ -182,7 +176,6 @@ div.lazy {
     margin-bottom: 3px;
 }
 
-.publication-meta .fa-star,
 .publication-note .fa-star {
     margin: 0.10rem 0.10rem;
 }

@@ -2,12 +2,10 @@
 title:          "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Level Task Ladder"
 date:           2026-05-12 00:01:00 +0800
 selected:       true
-pub:            "Under Review"
-# pub:            "CoRL 2026, Conference on Robot Learning"
-pub_pre:        "Submitted to "
-pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
-pub_date:       "2026"
+pub_note:
+  # - "In Submission"
+  # - "ICRA 2027, IEEE International Conference on Robotics and Automation"
+  - "IROS 2026 @ Bimanual Robot Learning"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   TL;DR: ManiLadder introduces a difficulty-calibrated benchmark for robotic manipulation, using standardized imitation learning performance to organize diverse tasks into a structured ladder for measuring progress in robot learning.
