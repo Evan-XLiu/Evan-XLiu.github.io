@@ -7,6 +7,11 @@ positions:
 - name: NUS
   logo: /assets/images/badges/NUS.png  # Logo is optional
 
+positions_zh:
+- name: 机器人学理学硕士
+- name: 新加坡国立大学
+  logo: /assets/images/badges/NUS.png
+
 
 email: "xuanweiliu@u.nus.edu"
 # cv_link: link-to-your-cv-file
@@ -22,25 +27,43 @@ wechat_qrcode: /assets/images/etc/wechat.jpg
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am currently a Master's student in Robotics at the
+    I am currently pursuing an MSc in Robotics at the
     <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore (NUS)</a>,
-    where I am conducting research at the <a href="https://magiclab-nus.github.io/" target="_blank" rel="noopener noreferrer">MAGIC Lab</a>
-    under the supervision of Prof. <a href="https://jiafei1224.github.io/" target="_blank" rel="noopener noreferrer">Jiafei Duan</a>.
-    Prior to this, I worked as a research intern at the
-    <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">LinS Lab</a>
-    under the supervision of Prof. <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">Lin Shao</a>, and at
-    <a href="https://airs.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">AIRS</a>
-    under the supervision of Prof. <a href="https://scholar.google.com/citations?user=1t1iV1AAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Yongquan Chen</a>.
+    where I am a member of the <a href="https://magiclab-nus.github.io/" target="_blank" rel="noopener noreferrer">MAGIC Lab</a>,
+    advised by Prof. <a href="https://jiafei1224.github.io/" target="_blank" rel="noopener noreferrer">Jiafei Duan</a>.
+    Previously, I was a research intern at the <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">LinS Lab</a>
+    under the guidance of Prof. <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">Lin Shao</a>,
+    and also collaborated with Prof. <a href="https://scholar.google.com/citations?user=1t1iV1AAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Yongquan Chen</a>
+    at the <a href="https://airs.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">AIRS</a>.
     I received my Bachelor's degree in Automation from the
     <a href="http://en.hitsz.edu.cn/" target="_blank" rel="noopener noreferrer">Harbin Institute of Technology, Shenzhen (HITSZ)</a>.
   </p>
   <p>
-    My research focuses on robot manipulation, particularly dexterous manipulation and learning-based
-    control. I am also interested in vision-language-action models and their applications to
-    generalizable robotic manipulation.
+    My research centers on robot manipulation, with a particular interest in dexterous manipulation and learning-based control.
+    I am also interested in vision-language-action (VLA) models and their potential for generalizable robotic manipulation.
   </p>
   <p>
-    Feel free to contact me if you are interested in discussing or collaborating with me.
+    If you share similar interests, feel free to reach out. I am always happy to exchange ideas and explore potential collaborations.
+  </p>
+
+short_bio_zh: >-
+  <p>
+    目前，我在
+    <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">新加坡国立大学(NUS)</a>
+    攻读机器人学理学硕士，并在
+    <a href="https://magiclab-nus.github.io/" target="_blank" rel="noopener noreferrer">MAGIC Lab</a>
+    从事机器人学习与操作相关研究，导师为 <a href="https://jiafei1224.github.io/" target="_blank" rel="noopener noreferrer">Jiafei Duan教授</a>。此前，我在
+    <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">Lin Shao教授</a> 的
+    <a href="https://linsats.github.io/" target="_blank" rel="noopener noreferrer">LinS Lab</a> 担任科研实习生，也曾在
+    <a href="https://airs.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer">深圳市人工智能与机器人研究院(AIRS)</a>
+    与 <a href="https://scholar.google.com/citations?user=1t1iV1AAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Yongquan Chen教授</a> 合作。我本科毕业于
+    <a href="http://en.hitsz.edu.cn/" target="_blank" rel="noopener noreferrer">哈尔滨工业大学(深圳)</a> 自动化专业。
+  </p>
+  <p>
+    我的研究聚焦于机器人操作，尤其是灵巧操作与基于学习的控制。我也关注视觉—语言—动作(VLA)模型及其在通用机器人操作中的应用。
+  </p>
+  <p>
+    如果你也对这些方向感兴趣，欢迎与我交流，也期待有机会一起做些有意思的研究。
   </p>
 
 portrait_url: /assets/images/photo.jpg
@@ -63,6 +86,20 @@ education:
   position: B.Eng. in Automation
   date: Aug. 2022 - Jul. 2026
 
+education_zh:
+- name: 新加坡国立大学
+  logo: /assets/images/badges/NUS.png
+  position: 机器人学理学硕士
+  date: 2026年8月 - 至今
+- name: 牛津大学
+  logo: /assets/images/badges/OX.png
+  position: 人工智能暑期项目访问学生
+  date: 2024年8月
+- name: 哈尔滨工业大学(深圳)
+  logo: /assets/images/badges/HIT.png
+  position: 自动化专业工学学士
+  date: 2022年8月 - 2026年7月
+
 experience:
 - name: MAGIC Lab, NUS
   logo: /assets/images/badges/MAGIC1.png
@@ -84,6 +121,28 @@ experience:
   logo: /assets/images/badges/CET.png
   position: AI Intern
   date: Jan. 2025 - Mar. 2025
+
+experience_zh:
+- name: 新加坡国立大学 MAGIC Lab
+  logo: /assets/images/badges/MAGIC1.png
+  position: 科研实习生
+  date: 2026年8月 - 至今
+- name: RoboScience
+  logo: /assets/images/badges/RoboScience.png
+  position: 机器人操作算法实习生
+  date: 2026年3月 - 2026年7月
+- name: 新加坡国立大学 LinS Lab
+  logo: /assets/images/badges/Linslab.png
+  position: 科研实习生
+  date: 2025年12月 - 2026年8月
+- name: AIRS
+  logo: /assets/images/badges/AIRS.png
+  position: 灵巧操作实习生
+  date: 2025年11月 - 2026年3月
+- name: CET
+  logo: /assets/images/badges/CET.png
+  position: 人工智能实习生
+  date: 2025年1月 - 2025年3月
 
 # awards:
 # - name: Award Name 2

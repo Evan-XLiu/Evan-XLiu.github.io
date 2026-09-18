@@ -1,0 +1,23 @@
+# 导航
+nav_menu: "菜单"
+
+# 个人信息
+about_me: "关于我"
+cv: "个人简历"
+close: "关闭"
+
+# 首页板块
+education: "教育经历"
+experience: "研究经历"
+honors_awards: "荣誉与奖励"
+news: "最新动态"
+selected_publications: "精选论文"
+view_all: "（查看全部）"
+all_publications: "全部论文"
+
+# 博客
+read_more: "阅读全文"
+toc_title: "目录"
+
+# 页脚
+last_updated: "最后更新："

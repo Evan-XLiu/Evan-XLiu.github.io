@@ -3,7 +3,7 @@
         <div class="row my-2">
             <div class="col-12">
                 <div class="text-right text-muted">
-                    <div><i>Last updated: {{ "now" | date: "%b %Y" }}</i></div>
+                    <div><i><span class="lang-en">{{ site.data.i18n.en.last_updated }} {{ "now" | date: "%b %Y" }}</span><span class="lang-zh" lang="zh-CN">{{ site.data.i18n.zh.last_updated }}{{ "now" | date: "%Y年%m月" }}</span></i></div>
                     <div>{{ site.data.display.footer_text }}</div>
                 </div>
             </div>

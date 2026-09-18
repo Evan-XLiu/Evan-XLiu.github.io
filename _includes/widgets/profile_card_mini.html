@@ -29,9 +29,16 @@
 
                 <div class="row small">
                     <div class="col text-center">
-                        {% for position in site.data.profile.positions %}
-                        {{ position.name }}<br/>
-                        {% endfor %}
+                        <span class="lang-en">
+                            {% for position in site.data.profile.positions %}
+                            {{ position.name }}<br/>
+                            {% endfor %}
+                        </span>
+                        <span class="lang-zh" lang="zh-CN">
+                            {% for position in site.data.profile.positions_zh %}
+                            {{ position.name }}<br/>
+                            {% endfor %}
+                        </span>
                     </div>
                 </div>
 
@@ -106,7 +113,7 @@
             </div>
             {% endif %}
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">{% include i18n.html key="close" %}</button>
             </div>
         </div>
     </div>

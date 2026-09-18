@@ -1,15 +1,24 @@
 <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
-        </button>
+        <div class="navbar-actions d-flex align-items-center ml-auto order-sm-2">
+            <div class="lang-toggle" role="group" aria-label="Language / 语言">
+                <button type="button" class="lang-toggle-label" data-language="en" aria-pressed="true" onclick="setSiteLanguage('en')" title="Switch to English">EN</button>
+                <span class="lang-toggle-divider" aria-hidden="true"></span>
+                <button type="button" class="lang-toggle-label" data-language="zh" aria-pressed="false" onclick="setSiteLanguage('zh')" title="切换为中文">CN</button>
+            </div>
+            <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-map" aria-hidden="true"></i> {% include i18n.html key="nav_menu" %}
+            </button>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse order-sm-1" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navigation.pages %}
                 <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                    <a class="nav-link" href="{{ item.url | relative_url }}">
+                        <span class="lang-en">{{ item.name }}</span><span class="lang-zh" lang="zh-CN">{{ item.name_zh | default: item.name }}</span>
+                    </a>
                 </li>
                 {% endfor %}
             </ul>

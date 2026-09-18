@@ -106,6 +106,112 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none;
 }
 
+/* Site-wide language visibility */
+html.lang-active-en .lang-zh,
+html.lang-active-zh .lang-en {
+    display: none !important;
+}
+
+.lang-en {
+    line-height: 1.6;
+}
+
+.lang-zh {
+    font-family: "LXGW WenKai", "Kaiti SC", "STKaiti", serif;
+    line-height: 1.7;
+}
+
+/* Compact segmented language control in the top-right corner */
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    border: 0;
+    background: transparent;
+}
+
+.lang-toggle-label {
+    position: relative;
+    top: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    min-width: 1.8rem;
+    padding: 0.1rem 0.3rem;
+    border: 0;
+    background: transparent;
+    color: #9299a1;
+    font: inherit;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: color 0.18s ease;
+}
+
+.lang-toggle-label:hover {
+    color: #1f4f78;
+}
+
+.lang-toggle-label:focus-visible {
+    position: relative;
+    z-index: 1;
+    outline: 2px solid #477aa5;
+    outline-offset: -2px;
+}
+
+.lang-toggle-label.lang-toggle-active {
+    background: transparent;
+    color: #315f86;
+    font-weight: 800;
+}
+
+.lang-toggle-divider {
+    width: 1px;
+    height: 0.75rem;
+    background: rgba(73, 80, 87, 0.18);
+}
+
+.navbar-actions {
+    flex: 0 0 auto;
+    height: 2rem;
+}
+
+@media (min-width: 576px) {
+    .navbar-actions {
+        padding-left: 0.8rem;
+    }
+
+    .navbar .navbar-collapse,
+    .navbar .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        display: inline-flex;
+        align-items: center;
+        height: 2rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 1.25rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        max-width: calc(100% - 9.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .navbar-toggler {
+        padding: 0.35rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
 .inline-badge {
     height: 16px;
     vertical-align: -10%;
