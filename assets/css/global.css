@@ -121,6 +121,21 @@ html.lang-active-zh .lang-en {
     line-height: 1.7;
 }
 
+.profile-name-text {
+    line-height: inherit;
+}
+
+.profile-name-zh {
+    font-family: "Zhi Mang Xing", cursive;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+html.lang-active-zh .profile-name-heading {
+    margin-bottom: 0.1rem;
+}
+
 /* Compact segmented language control in the top-right corner */
 .lang-toggle {
     display: inline-flex;

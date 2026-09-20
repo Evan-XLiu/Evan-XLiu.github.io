@@ -22,8 +22,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                    <div class="col text-center h4 profile-name-heading">
+                        <span class="lang-en profile-name-text">{{ site.data.profile.primary_name }}</span><span class="lang-zh profile-name-text profile-name-zh" lang="zh-CN">{{ site.data.profile.primary_name_zh | default: site.data.profile.primary_name }}</span>
                     </div>
                 </div>
 
