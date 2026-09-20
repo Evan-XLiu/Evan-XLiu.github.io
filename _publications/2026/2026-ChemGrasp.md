@@ -6,7 +6,9 @@ pub_note:
   - "Clean Energy 2026"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
-    TL;DR: ChemGrasp enables safe, dexterous robotic manipulation of closed chemical vessels through task-specific grasp optimization and motion planning.
+    TL;DR: ChemGrasp enables safe, dexterous robotic manipulation of common chemical vessels through task-specific grasp optimization and motion planning.
+abstract_zh: >-
+    TL;DR：ChemGrasp 通过面向任务的抓取优化与运动规划，实现对常见化学容器的安全灵巧操作。
 
 covers:   
   # - /assets/images/covers/ContactExplorer_1.png

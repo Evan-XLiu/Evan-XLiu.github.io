@@ -9,6 +9,8 @@ pub_note:
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
     TL;DR: ContactExplorer is an exploration method for general-purpose dexterous manipulation, which encourages diverse finger-object contact patterns by tracking state-conditioned contact coverage.
+abstract_zh: >-
+    TL;DR：ContactExplorer 是一种面向通用灵巧操作的探索方法，通过追踪状态条件下的接触覆盖率，鼓励形成多样化的手指—物体接触模式。
 
 covers:   
   # - /assets/images/covers/ContactExplorer_1.png

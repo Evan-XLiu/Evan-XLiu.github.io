@@ -27,7 +27,7 @@
                 {% endfor %}
             {% endif %}
             <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+            <p class="mt-0 mb-0 small text-muted"><span class="lang-en">{{ item.abstract }}</span><span class="lang-zh" lang="zh-CN">{{ item.abstract_zh | default: item.abstract }}</span></p>
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
@@ -64,7 +64,7 @@
                     {% endfor %}
                 {% endif %}
                 <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
-                <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+                <p class="mt-0 mb-0 small text-muted"><span class="lang-en">{{ item.abstract }}</span><span class="lang-zh" lang="zh-CN">{{ item.abstract_zh | default: item.abstract }}</span></p>
                 
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                     {% for link in item.links %}
