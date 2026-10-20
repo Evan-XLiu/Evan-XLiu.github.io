@@ -1,7 +1,7 @@
 {% assign visitor_map_id = site.visitor_map.mapmyvisitors_id | default: "" | strip %}
 {% if visitor_map_id != "" %}
-<div class="visitor-map mx-auto text-center" style="width: 100%; max-width: 960px;">
-    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ visitor_map_id | url_encode }}&amp;cl=ffffff&amp;w=a"></script>
+<div class="visitor-map mx-auto text-center" style="width: 100%; max-width: 100%; overflow: hidden;">
+    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=242c3b&amp;w=a&amp;t=n&amp;d={{ visitor_map_id | url_encode }}&amp;co=f4f7fc&amp;cmo=4f8a80&amp;cmn=ff6b6b&amp;ct=354052"></script>
 </div>
 {% elsif include.display %}
 <p class="text-muted text-center py-5 mb-0">
