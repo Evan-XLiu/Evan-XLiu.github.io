@@ -25,6 +25,7 @@ authors:
   - Chongkai Gao
   - Zhixuan Xu
   - Lin Shao
+github_repo: ruoyiqiao/ContactExplorer
 links:
   arXiv: https://arxiv.org/abs/2603.10971
   Code: https://github.com/ruoyiqiao/ContactExplorer

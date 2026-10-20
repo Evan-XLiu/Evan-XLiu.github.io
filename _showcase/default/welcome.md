@@ -8,7 +8,7 @@ date: 2050-01-12 00:01:00 +0800
     <h2>Hi, there!</h2>
     <hr />
     <p>
-        Beyond research, I am passionate about <code>music🎶</code> and <code>photography</code>📷. As a drummer, I am especially drawn to jazz, fusion, and funk, where rhythm, improvisation, and groove come together to create expressive and dynamic performances, and I was honored to receive First Prize at the Hong Kong International Music Festival with my band🏆. As a photography enthusiast, I love capturing moments, landscapes, and stories through my lens. My dream is to explore every corner of the world and record its diverse beauty along the way.
+        Beyond research, I enjoy <code>music🎶</code> and <code>photography</code>📷. As a drummer, I am especially drawn to the rhythms and improvisation of jazz, fusion, and funk. Playing with my band has been a memorable part of my life, and we were honored to win First Prize at the Hong Kong International Music Festival🏆. I also enjoy taking photos for fun, from everyday moments to landscapes I discover while traveling. I hope to explore more of the world and collect memories of its people, places, and beauty along the way.
     </p>
     <!-- <p>
         <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.

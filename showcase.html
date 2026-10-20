@@ -10,8 +10,9 @@ permalink: /showcase/
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
-{% if group.name != "" %}<h1>{{ group.name }}</h1>{% endif %}
-<div class="row grid mb-4">
+{% assign group_name = group.name | default: "" %}
+{% if group_name != "" %}<h1>{{ group_name }}</h1>{% endif %}
+<div class="row grid mb-4{% if forloop.first and group_name == "" %} mt-n2{% endif %}">
     <div class="grid-sizer col-1"></div>
     {% for item in group.items %}
     {% if item.width >= 6 -%}
