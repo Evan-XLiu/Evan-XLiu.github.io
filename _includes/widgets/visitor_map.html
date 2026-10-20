@@ -1,0 +1,11 @@
+{% assign visitor_map_id = site.visitor_map.mapmyvisitors_id | default: "" | strip %}
+{% if visitor_map_id != "" %}
+<div class="visitor-map mx-auto text-center" style="width: 100%; max-width: 960px;">
+    <script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d={{ visitor_map_id | url_encode }}"></script>
+</div>
+{% elsif include.display %}
+<p class="text-muted text-center py-5 mb-0">
+    <span class="lang-en">The visitor map is coming soon.</span>
+    <span class="lang-zh" lang="zh-CN">访客地图即将上线。</span>
+</p>
+{% endif %}

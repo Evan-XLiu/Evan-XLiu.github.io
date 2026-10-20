@@ -18,6 +18,11 @@
 baseurl: ""
 url: "https://evan-xliu.github.io"
 
+# MapMyVisitors globe: the `d` value from the generated globe.js embed URL.
+# Leave blank to disable tracking.
+visitor_map:
+  mapmyvisitors_id: "cYbtC4p4nZrBAa5kxqHZbZuuWTu8oAUFejVd7zQHyCY"
+
 
 # Build settings
 markdown: kramdown

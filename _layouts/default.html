@@ -27,6 +27,13 @@
     </main>
     {% include footer.html %}
 
+    {% unless page.permalink == '/showcase/' %}
+    <!-- Count visits across the site; the visible map lives in Showcase. -->
+    <div hidden aria-hidden="true">
+        {% include widgets/visitor_map.html %}
+    </div>
+    {% endunless %}
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
