@@ -1,9 +1,16 @@
 ---
 show: true
-width: 4
-class: "bg-transparent"
+width: 3
 date: 2020-01-01 00:00:00 +0800
 ---
-<div class="p-2">
+<section class="p-4" aria-labelledby="visitor-map-title">
+    <h2 id="visitor-map-title">
+        <span class="lang-en">Visitors around the world</span>
+        <!-- <span class="lang-zh" lang="zh-CN">世界各地的访客</span> -->
+    </h2>
+    <p class="text-muted">
+        <span class="lang-en">Thank you for visiting! Explore where visitors to this website come from.</span>
+        <!-- <span class="lang-zh" lang="zh-CN">感谢来访！在这里看看主页的访客来自世界哪些地方。</span> -->
+    </p>
     {% include widgets/visitor_map.html display=true %}
-</div>
+</section>

@@ -5,6 +5,7 @@ selected:       true
 pub_note:
   # - "In Submission"
   # - "ICRA 2027, IEEE International Conference on Robotics and Automation"
+  - "CoRL 2026 Workshop on SimBench2Real"
   - "Outstanding Paper Award @ IROS 2026 Workshop on Bimanual Manipulation"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
