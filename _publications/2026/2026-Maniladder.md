@@ -1,5 +1,5 @@
 ---
-title:          "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Level Task Ladder"
+title:          "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder"
 date:           2026-05-12 00:01:00 +0800
 selected:       true
 pub_note:
@@ -9,33 +9,34 @@ pub_note:
   - "Outstanding Paper Award @ IROS 2026 Workshop on Bimanual Manipulation"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
-  TL;DR: ManiLadder introduces a difficulty-calibrated benchmark for robotic manipulation, using standardized evaluations of imitation learning policies and VLA models to organize tasks into a structured ladder for measuring progress in robot learning.
+  TL;DR: ManiLadder is a simulation benchmark for robot manipulation with 112 tasks across four difficulty levels. Task difficulty is calibrated using the success rate of a reference policy under a shared training and evaluation protocol.
 abstract_zh: >-
-  TL;DR：ManiLadder 提出一个经难度校准的机器人操作基准，通过对模仿学习策略与 VLA 模型进行标准化评测，将多样化任务组织成结构化的能力阶梯，用于衡量机器人学习的进展。
+  TL;DR：ManiLadder 是一个机器人操作仿真基准，包含四个难度等级的 112 项任务。各任务的难度以参考策略在统一训练与评测协议下的成功率为依据进行校准。
 covers:
   - /assets/images/covers/Maniladder2.png
   # - /assets/images/covers/Maniladder_object.png
 authors:
   - Chongkai Gao*
   - Jieao Shi*
-  - Zhaoyu Mu
-  - Yudi Lin
+  - Zhaoyu Mu*
+  - Yudi Lin*
   - Xuanwei Liu
-  - Baiye Cheng
   - Wei Ken Ng
+  - Baiye Cheng
   - Anqi Chen
   - Kerun Liu
-  - Xuchuan Huang
   - Zhuoran Li
+  - Xuchuan Huang
   - Haoyang Li
   - Shengjia Zhu
-  - Yuxuan Zhang
   - Nga Teng Chan
+  - Yuxuan Zhang
   - Xingyu Chen
   - Lin Shao
 links:
-  arXiv: 
-  Code: https://github.com/luost26/academic-homepage
-  Website: https://maniladder.github.io/
-  Dataset:
+  arXiv: https://arxiv.org/abs/2611.16374
+  Website: https://maniladder-benchmark.github.io/
+  Leaderboard: https://maniladder-benchmark.github.io/#leaderboard
+  Dataset: https://huggingface.co/datasets/Linslab/ManiLadder_Dataset
+  Models: https://huggingface.co/Linslab/ManiLadder_Models
 ---
