@@ -4,8 +4,7 @@
 
     // The source is a seamless 12-column wall of task clips.
     const columns = 12;
-    const zoom = 2.5;
-    const tilt = -5 * Math.PI / 180;
+    const zoom = 3;
 
     document.querySelectorAll('[data-cover-motion]').forEach((cover) => {
         const video = cover.querySelector('video');
@@ -36,9 +35,13 @@
                 const left = offsetX - Math.ceil((offsetX + radius) / wallWidth) * wallWidth;
                 const top = offsetY - Math.ceil((offsetY + radius) / wallHeight) * wallHeight;
 
+                // Resizing clears the canvas, so do it only when a video frame can replace it immediately.
+                const canvasWidth = Math.round(width * pixelRatio);
+                const canvasHeight = Math.round(height * pixelRatio);
+                if (canvas.width !== canvasWidth) canvas.width = canvasWidth;
+                if (canvas.height !== canvasHeight) canvas.height = canvasHeight;
                 context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
                 context.translate(width / 2, height / 2);
-                context.rotate(tilt);
                 for (let y = top; y < radius; y += wallHeight) {
                     for (let x = left; x < radius; x += wallWidth) {
                         context.drawImage(video, x, y, wallWidth + 1, wallHeight + 1);
@@ -66,8 +69,6 @@
         new ResizeObserver(([entry]) => {
             ({ width, height } = entry.contentRect);
             pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
-            canvas.width = Math.round(width * pixelRatio);
-            canvas.height = Math.round(height * pixelRatio);
             if (visible && !animationFrame && !motionPreference.matches) draw(performance.now());
         }).observe(cover);
 
