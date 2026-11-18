@@ -4,6 +4,8 @@ title: ManiLadder
 date: 2026-05-11
 category: Robot Learning Benchmark
 cover: /assets/images/covers/Maniladder2.png
+cover_video: https://maniladder-benchmark.github.io/videos/hero/wall.mp4
+cover_video_poster: https://maniladder-benchmark.github.io/assets/hero/wall.jpg
 summary: A robot manipulation simulation benchmark with 112 tasks across four calibrated difficulty levels.
 links:
   Paper: https://arxiv.org/abs/2611.16374

@@ -27,7 +27,7 @@ authors:
   - Lin Shao
 github_repo: ruoyiqiao/ContactExplorer
 links:
-  arXiv: https://arxiv.org/abs/2603.10971
+  Paper: https://arxiv.org/abs/2603.10971
   Code: https://github.com/ruoyiqiao/ContactExplorer
   Website: https://contact-explorer.github.io/
 ---

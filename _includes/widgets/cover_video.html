@@ -1,0 +1,7 @@
+<div class="cover-motion {{ include.class }}" data-cover-motion>
+    <video autoplay muted loop playsinline poster="{{ include.poster | relative_url }}"
+        aria-label="{{ include.title | escape }} task montage">
+        <source src="{{ include.video | relative_url }}" type="video/mp4" media="(prefers-reduced-motion: no-preference)">
+    </video>
+    <canvas aria-hidden="true" hidden></canvas>
+</div>

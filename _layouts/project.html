@@ -16,7 +16,11 @@ layout: default
         </div>
         {% endif %}
     </header>
+    {% if page.cover_video %}
+    {% include widgets/cover_video.html video=page.cover_video poster=page.cover_video_poster title=page.title class="project-hero rounded-xl shadow-sm" %}
+    {% else %}
     <img class="project-hero rounded-xl shadow-sm" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+    {% endif %}
     <div class="project-detail-body card border-0 shadow-sm bg-white">
         {{ content }}
     </div>

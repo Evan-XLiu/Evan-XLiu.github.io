@@ -21,7 +21,11 @@ permalink: /projects/
     <div class="col-lg-4 col-md-6 mb-4">
         <a class="project-card card border-0 shadow-sm" href="{{ project.url | relative_url }}">
             <div class="project-card-media">
+                {% if project.cover_video %}
+                {% include widgets/cover_video.html video=project.cover_video poster=project.cover_video_poster title=project.title class="project-card-video" %}
+                {% else %}
                 <img class="lazy" data-src="{{ project.cover | relative_url }}" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="{{ project.title }}">
+                {% endif %}
             </div>
             <div class="card-body p-4">
                 <div class="project-card-meta mb-2">{{ project.category }} · {{ project.date | date: "%Y" }}</div>

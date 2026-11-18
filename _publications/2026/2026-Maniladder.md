@@ -12,9 +12,8 @@ abstract: >-
   TL;DR: ManiLadder is a simulation benchmark for robot manipulation with 112 tasks across four difficulty levels. Task difficulty is calibrated using the success rate of a reference policy under a shared training and evaluation protocol.
 abstract_zh: >-
   TL;DR：ManiLadder 是一个机器人操作仿真基准，包含四个难度等级的 112 项任务。各任务的难度以参考策略在统一训练与评测协议下的成功率为依据进行校准。
-covers:
-  - /assets/images/covers/Maniladder2.png
-  # - /assets/images/covers/Maniladder_object.png
+cover_video: https://maniladder-benchmark.github.io/videos/hero/wall.mp4
+cover_video_poster: https://maniladder-benchmark.github.io/assets/hero/wall.jpg
 authors:
   - Chongkai Gao*
   - Jieao Shi*
@@ -34,7 +33,7 @@ authors:
   - Xingyu Chen
   - Lin Shao
 links:
-  arXiv: https://arxiv.org/abs/2611.16374
+  Paper: https://arxiv.org/abs/2611.16374
   Website: https://maniladder-benchmark.github.io/
   Leaderboard: https://maniladder-benchmark.github.io/#leaderboard
   Dataset: https://huggingface.co/datasets/Linslab/ManiLadder_Dataset

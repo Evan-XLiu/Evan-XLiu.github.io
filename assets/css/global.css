@@ -255,6 +255,22 @@ html.lang-active-zh .profile-name-heading {
     object-fit: contain;
 }
 
+.cover-motion {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #111;
+}
+
+.cover-motion video,
+.cover-motion canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .publication-cover-stack-mobile {
     width: 100%;
 }
@@ -334,6 +350,7 @@ div.lazy {
 .project-card:hover { color: inherit; text-decoration: none; transform: translateY(-4px); box-shadow: 0 .7rem 1.6rem rgba(24,35,48,.15) !important; }
 .project-card-media { height: 190px; overflow: hidden; background: #e8edf3; }
 .project-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.project-card-video { height: 100%; }
 .project-card:hover img { transform: scale(1.025); }
 .project-card-meta { color: #718096; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .project-detail { max-width: 1040px; margin: 1.5rem auto 0; }

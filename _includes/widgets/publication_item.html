@@ -7,7 +7,9 @@
 <div class="d-none d-md-block">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-5 col-xl-4 mb-md-0 p-md-3">
-            {%- if primary_cover -%}
+            {%- if item.cover_video -%}
+            {% include widgets/cover_video.html video=item.cover_video poster=item.cover_video_poster title=item.title class="w-100 rounded-sm publication-cover-image" %}
+            {%- elsif primary_cover -%}
             <div class="publication-cover-stack">
                 {% for cover_image in cover_images limit: 2 %}
                 <img data-src="{{ cover_image | relative_url }}" alt="{{ item.title }} cover {{ forloop.index }}" class="lazy w-100 rounded-sm publication-cover-image" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
@@ -48,7 +50,9 @@
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
-                {% if primary_cover %}
+                {% if item.cover_video %}
+                {% include widgets/cover_video.html video=item.cover_video poster=item.cover_video_poster title=item.title class="w-100 rounded-sm publication-cover-image mb-3" %}
+                {% elsif primary_cover %}
                 <div class="publication-cover-stack publication-cover-stack-mobile mb-3">
                     {% for cover_image in cover_images limit: 2 %}
                     <img data-src="{{ cover_image | relative_url }}" alt="{{ item.title }} cover {{ forloop.index }}" class="lazy w-100 rounded-sm publication-cover-image" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
