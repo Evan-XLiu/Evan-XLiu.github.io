@@ -17,7 +17,7 @@ authors:
   - Jiafei Duan
 github_repo: MAGICLAB-NUS/BiCAT
 links:
-  Paper: https://magiclab-nus.github.io/BiCAT/BiCAT.pdf
+  Paper: https://arxiv.org/abs/2611.23499
   Code: https://github.com/MAGICLAB-NUS/BiCAT
   Website: https://magiclab-nus.github.io/BiCAT/
 ---
