@@ -24,7 +24,7 @@ authors:
   - Yunfan Lou
   - Chongkai Gao
   - Zhixuan Xu
-  - Lin Shao
+  - Lin Shao†
 github_repo: ruoyiqiao/ContactExplorer
 links:
   Paper: https://arxiv.org/abs/2603.10971

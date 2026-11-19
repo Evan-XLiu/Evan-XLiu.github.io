@@ -14,7 +14,7 @@ authors:
   - Xuanwei Liu
   - Guipu Cao
   - Zhongyi Luo
-  - Jiafei Duan
+  - Jiafei Duan†
 github_repo: MAGICLAB-NUS/BiCAT
 links:
   Paper: https://arxiv.org/abs/2611.23499

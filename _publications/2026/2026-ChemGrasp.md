@@ -16,12 +16,12 @@ covers:
 
 authors:
   - Xuanwei Liu*
-  - Tiewei Shang*
+  - Tiewei Shang*†
   - Rui Wang
   - Junliang Li
   - Jisong Pan
   - Zixin Wang
-  - Yongquan Chen
+  - Yongquan Chen†
   
 links:
   Paper: https://academic.oup.com/ce/advance-article/doi/10.1093/ce/zkag038/8723950?login=false

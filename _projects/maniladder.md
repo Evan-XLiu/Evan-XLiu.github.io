@@ -11,7 +11,6 @@ links:
   Paper: https://arxiv.org/abs/2611.16374
   Code: https://github.com/HeegerGao/ManiLadder-Benchmark
   Website: https://maniladder-benchmark.github.io/
-  Leaderboard: https://maniladder-benchmark.github.io/#leaderboard
   Dataset: https://huggingface.co/datasets/Linslab/ManiLadder_Dataset
   Models: https://huggingface.co/Linslab/ManiLadder_Models
 ---
