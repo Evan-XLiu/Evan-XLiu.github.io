@@ -32,6 +32,7 @@ authors:
   - Yuxuan Zhang
   - Xingyu Chen
   - Lin Shao†
+github_repo: HeegerGao/ManiLadder-Benchmark
 links:
   Paper: https://arxiv.org/abs/2611.16374
   Code: https://github.com/HeegerGao/ManiLadder-Benchmark
